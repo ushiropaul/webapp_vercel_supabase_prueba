@@ -1,5 +1,3 @@
-require('dotenv').config(); // Carga las variables del archivo .env
-
 const { createClient } = require('@supabase/supabase-js');
 
 // Ahora las variables están disponibles en process.env
