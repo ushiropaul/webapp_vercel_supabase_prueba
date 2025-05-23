@@ -1,6 +1,8 @@
+require('dotenv').config(); // Carga las variables del archivo .env
+
 const { createClient } = require('@supabase/supabase-js');
 
-// Variables de entorno que configuraremos en Vercel
+// Ahora las variables están disponibles en process.env
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 module.exports = async (req, res) => {
